@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AuthHeader" customModule="BU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash1" translatesAutoresizingMaskIntoConstraints="NO" id="b0b-Sq-9aJ">
+                    <rect key="frame" x="15" y="177.5" width="384" height="217.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash2" translatesAutoresizingMaskIntoConstraints="NO" id="muW-2w-UV4">
+                    <rect key="frame" x="158" y="30" width="98" height="97.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="98" id="WeU-b1-v4u"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui1-7Z-3My">
+                    <rect key="frame" x="158" y="147.5" width="98" height="20"/>
+                    <attributedString key="attributedText">
+                        <fragment content="BU App">
+                            <attributes>
+                                <font key="NSFont" size="16" name="Montserrat-Medium"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFd-T5-whD">
+                    <rect key="frame" x="15" y="410" width="384" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FaE-xA-Q0z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="b0b-Sq-9aJ" firstAttribute="top" secondItem="Ui1-7Z-3My" secondAttribute="bottom" constant="10" id="8Jl-6S-aEj"/>
+                <constraint firstItem="Ui1-7Z-3My" firstAttribute="top" secondItem="muW-2w-UV4" secondAttribute="bottom" constant="20" id="9Qg-5k-6P5"/>
+                <constraint firstItem="muW-2w-UV4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dre-vD-Tka"/>
+                <constraint firstItem="b0b-Sq-9aJ" firstAttribute="width" secondItem="b0b-Sq-9aJ" secondAttribute="height" multiplier="667:378" id="GB3-Lj-056"/>
+                <constraint firstItem="Ui1-7Z-3My" firstAttribute="trailing" secondItem="muW-2w-UV4" secondAttribute="trailing" id="KzH-LH-HtA"/>
+                <constraint firstItem="muW-2w-UV4" firstAttribute="width" secondItem="muW-2w-UV4" secondAttribute="height" multiplier="184:183" id="LJN-Wl-G95"/>
+                <constraint firstItem="uFd-T5-whD" firstAttribute="trailing" secondItem="b0b-Sq-9aJ" secondAttribute="trailing" id="QJP-YR-GUr"/>
+                <constraint firstAttribute="trailing" secondItem="b0b-Sq-9aJ" secondAttribute="trailing" constant="15" id="Vqc-f7-5t9"/>
+                <constraint firstItem="b0b-Sq-9aJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aCK-6p-rc0"/>
+                <constraint firstItem="Ui1-7Z-3My" firstAttribute="leading" secondItem="muW-2w-UV4" secondAttribute="leading" id="aiD-e8-t4x"/>
+                <constraint firstItem="uFd-T5-whD" firstAttribute="top" secondItem="b0b-Sq-9aJ" secondAttribute="bottom" constant="15" id="byq-F0-QnS"/>
+                <constraint firstItem="uFd-T5-whD" firstAttribute="leading" secondItem="b0b-Sq-9aJ" secondAttribute="leading" id="eBK-IY-Vlw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uFd-T5-whD" secondAttribute="bottom" constant="20" id="eK8-a1-RVi"/>
+                <constraint firstItem="muW-2w-UV4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="oAG-88-NiJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblHeaderTitle" destination="uFd-T5-whD" id="dij-FW-mbe"/>
+            </connections>
+            <point key="canvasLocation" x="-214.49275362318843" y="-55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Splash1" width="666.5" height="377.5"/>
+        <image name="Splash2" width="183.5" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

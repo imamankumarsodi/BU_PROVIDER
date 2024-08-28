@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vGK-iU-GLq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="fgf-r5-QXw">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="vGK-iU-GLq" customClass="SplashVC" customModule="BU_PROVIDER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zqv-u3-lg6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash1" translatesAutoresizingMaskIntoConstraints="NO" id="8Le-ou-dhh">
+                                <rect key="frame" x="0.0" y="627.5" width="414" height="234.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Le-ou-dhh" secondAttribute="height" multiplier="667:378" id="BGz-tj-jHp"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gc8-Ym-k4L">
+                                <rect key="frame" x="115" y="341" width="184" height="214"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash2" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-T1-c6f">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="183"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KL1-T1-c6f" secondAttribute="height" multiplier="184:183" id="2Px-fk-7se"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVIDER APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwE-0j-2wQ">
+                                        <rect key="frame" x="23.5" y="193" width="137.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jdc-qg-QIE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Le-ou-dhh" secondAttribute="trailing" id="0nw-zU-fve"/>
+                            <constraint firstItem="gc8-Ym-k4L" firstAttribute="centerY" secondItem="zqv-u3-lg6" secondAttribute="centerY" id="Bnb-2x-OaC"/>
+                            <constraint firstItem="8Le-ou-dhh" firstAttribute="leading" secondItem="zqv-u3-lg6" secondAttribute="leading" id="Rso-6C-bZk"/>
+                            <constraint firstItem="gc8-Ym-k4L" firstAttribute="centerX" secondItem="zqv-u3-lg6" secondAttribute="centerX" id="UR4-aS-5qd"/>
+                            <constraint firstItem="Jdc-qg-QIE" firstAttribute="bottom" secondItem="8Le-ou-dhh" secondAttribute="bottom" id="oBg-DS-5EN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logo_splash" destination="gc8-Ym-k4L" id="wld-1I-vA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMd-Nv-ygw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="-113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash1" width="666.5" height="377.5"/>
+        <image name="Splash2" width="183.5" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

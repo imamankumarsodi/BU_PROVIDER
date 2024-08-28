@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="User_Data" representedClassName=".User_Data" syncable="YES" codeGenerationType="class">
+        <attribute name="access_token" optional="YES" attributeType="String"/>
+        <attribute name="address_type" optional="YES" attributeType="String"/>
+        <attribute name="cityname" optional="YES" attributeType="String"/>
+        <attribute name="device_id" optional="YES" attributeType="String"/>
+        <attribute name="device_token" optional="YES" attributeType="String"/>
+        <attribute name="device_type" optional="YES" attributeType="String"/>
+        <attribute name="dob" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="first_name" optional="YES" attributeType="String"/>
+        <attribute name="full_name" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="house_no" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="last_name" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="locality" optional="YES" attributeType="String"/>
+        <attribute name="login_by" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="mobile" optional="YES" attributeType="String"/>
+        <attribute name="parent_name" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="String"/>
+        <attribute name="pincode" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="String"/>
+        <attribute name="rating_count" optional="YES" attributeType="String"/>
+        <attribute name="social_unique_id" optional="YES" attributeType="String"/>
+        <attribute name="statename" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="stripe_cust_id" optional="YES" attributeType="String"/>
+        <attribute name="wallet_balance" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="User_Data" positionX="-63" positionY="-18" width="128" height="464"/>
+    </elements>
+</model>

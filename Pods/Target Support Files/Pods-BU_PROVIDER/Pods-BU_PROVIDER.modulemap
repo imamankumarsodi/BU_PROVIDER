@@ -1,0 +1,6 @@
+framework module Pods_BU_PROVIDER {
+  umbrella header "Pods-BU_PROVIDER-umbrella.h"
+
+  export *
+  module * { export * }
+}

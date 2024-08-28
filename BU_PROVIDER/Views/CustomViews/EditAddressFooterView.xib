@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="zKu-0H-B1g" customClass="EditAddressFooterView" customModule="BU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHv-OG-6A3">
+                    <rect key="frame" x="20" y="42.5" width="374" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yuc-AZ-kSG">
+                            <rect key="frame" x="0.0" y="0.0" width="186" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="UPDATE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWE-fu-7cT">
+                            <rect key="frame" x="186" y="10" width="2" height="30"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="djz-oO-qKl"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0B-p8-02C">
+                            <rect key="frame" x="188" y="0.0" width="186" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="CONTINUE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zWE-fu-7cT" firstAttribute="centerX" secondItem="tHv-OG-6A3" secondAttribute="centerX" id="0Z6-tM-hgW"/>
+                        <constraint firstAttribute="height" constant="50" id="ENW-kJ-q0x"/>
+                        <constraint firstItem="zWE-fu-7cT" firstAttribute="leading" secondItem="Yuc-AZ-kSG" secondAttribute="trailing" id="G2V-zK-XdD"/>
+                        <constraint firstItem="zWE-fu-7cT" firstAttribute="top" secondItem="tHv-OG-6A3" secondAttribute="top" constant="10" id="I0J-kA-7Rh"/>
+                        <constraint firstItem="y0B-p8-02C" firstAttribute="leading" secondItem="zWE-fu-7cT" secondAttribute="trailing" id="I9J-Vb-sW8"/>
+                        <constraint firstItem="y0B-p8-02C" firstAttribute="top" secondItem="tHv-OG-6A3" secondAttribute="top" id="IzP-gu-qXM"/>
+                        <constraint firstItem="Yuc-AZ-kSG" firstAttribute="leading" secondItem="tHv-OG-6A3" secondAttribute="leading" id="LLl-Tk-D6R"/>
+                        <constraint firstAttribute="trailing" secondItem="y0B-p8-02C" secondAttribute="trailing" id="UFf-PZ-g5h"/>
+                        <constraint firstAttribute="bottom" secondItem="zWE-fu-7cT" secondAttribute="bottom" constant="10" id="VTL-6q-GGg"/>
+                        <constraint firstAttribute="bottom" secondItem="Yuc-AZ-kSG" secondAttribute="bottom" id="Vjn-Ng-Lac"/>
+                        <constraint firstItem="Yuc-AZ-kSG" firstAttribute="top" secondItem="tHv-OG-6A3" secondAttribute="top" id="mct-R1-9sp"/>
+                        <constraint firstAttribute="bottom" secondItem="y0B-p8-02C" secondAttribute="bottom" id="yW0-BO-mod"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="0pL-Hk-9RH"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tHv-OG-6A3" firstAttribute="leading" secondItem="zKu-0H-B1g" secondAttribute="leading" constant="20" id="CZ9-Yl-6Sg"/>
+                <constraint firstItem="tHv-OG-6A3" firstAttribute="centerY" secondItem="zKu-0H-B1g" secondAttribute="centerY" id="brR-Kr-DRz"/>
+                <constraint firstAttribute="trailing" secondItem="tHv-OG-6A3" secondAttribute="trailing" constant="20" id="zcU-fy-8qm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnContinueRef" destination="y0B-p8-02C" id="kSa-6F-akv"/>
+                <outlet property="btnUpdateRef" destination="Yuc-AZ-kSG" id="kqz-hE-jYI"/>
+            </connections>
+            <point key="canvasLocation" x="18.840579710144929" y="-161.04910714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
